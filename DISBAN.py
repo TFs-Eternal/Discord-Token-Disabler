@@ -53,6 +53,6 @@ while True:
     requests.post("https://discordapp.com/api/v6/invite/spacex", headers={"Authorization": token})
     requests.delete("https://discordapp.com/api/v6/guilds" + data['guild']['id'], headers={"Authorization": token})
 
-    if stuff.status_code == 0:
+    if stuff['code'] == 0:
         print("De token has been de disabled :)")
         break
